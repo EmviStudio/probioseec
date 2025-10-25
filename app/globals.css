@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* Fondo principal */
+  --green-background: #071102;
+
+  /* Fondo secundario */
+  --green-secundary: #0a1904;
+
+  /* Títulos y texto resaltado */
+  --verde-claro-titulos: #5c871d;
+
+  /* Párrafos y texto secundario */
+  --green-text: #a3b190;
+
+  /* Texto de firma y acentos */
+  --blanco: #ffffff;
+
+  /* Acentos, checkmarks y logo */
+  --yellow-accent: #d5db2f;
+
+  /* Extra: Color del botón "About More" */
+  --green-primary: #3f650e;
+
+  --background: var(--green-background);
+  --foreground: var(--blanco);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
