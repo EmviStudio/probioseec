@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'f005.backblazeb2.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.probioseec.com',
+      },
     ],
   },
 };

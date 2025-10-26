@@ -8,8 +8,8 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "/assets/archivos/Desinfeccion01-probiose.jpeg",
-    "/assets/archivos/Desinfeccion02-probiose.jpeg"
+    "https://assets.probioseec.com/archivos/Desinfeccion01-probiose.jpeg",
+    "https://assets.probioseec.com/archivos/Desinfeccion02-probiose.jpeg"
   ];
 
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function Home() {
       <section id="hero" className="relative flex min-h-screen items-center justify-center px-4 overflow-hidden">
         {/* Video Background */}
         <video
-          src="/assets/archivos/bananera background.mp4"
+          src="https://assets.probioseec.com/archivos/Bananera%20Background.mp4"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           autoPlay
           muted
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
             <div className="rounded-lg shadow-lg overflow-hidden relative w-[280px] h-[400px] group cursor-pointer">
-              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(/assets/archivos/cuarentena.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/cuarentena.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.5) 100%)' }}></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.85) 100%)' }}></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg shadow-lg overflow-hidden relative w-[280px] h-[400px] group cursor-pointer">
-              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(/assets/archivos/cumplimientodeley-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/cumplimientodeley-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.5) 100%)' }}></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.85) 100%)' }}></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
             </div>
                         <div className="rounded-lg shadow-lg overflow-hidden relative w-[280px] h-[400px] group cursor-pointer">
-              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(/assets/archivos/moko-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/moko-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.5) 100%)' }}></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.85) 100%)' }}></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
