@@ -529,7 +529,7 @@ function ContactFormHandler() {
         };
 
         // Enviar a n8n webhook de producción
-        const response = await fetch('https://n8n-n8n.3yia0f.easypanel.host/webhook/contact-form-probiose', {
+        const response = await fetch(process.env.N8N_WEBHOOK_URL || 'https://n8n-n8n.3yia0f.easypanel.host/webhook/contact-form-probiose', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

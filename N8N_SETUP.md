@@ -24,19 +24,23 @@ n8n start
 1. Una vez activado el workflow, copia la URL del webhook que aparece
 2. La URL tendrá un formato como: `https://tu-dominio.n8n.cloud/webhook/contact-form`
 
-## Paso 4: Actualizar el Código del Formulario
+## Paso 4: Configurar Variables de Entorno
 
-En el archivo `app/page.tsx`, reemplaza `TU_WEBHOOK_URL_AQUI` con tu URL real:
+### Para Cloudflare Pages:
+1. Ve a tu dashboard de Cloudflare Pages
+2. Selecciona tu proyecto
+3. Ve a **Settings** → **Environment variables**
+4. Agrega la variable:
+   - **Name:** `N8N_WEBHOOK_URL`
+   - **Value:** `https://tu-dominio.n8n.cloud/webhook/contact-form-probiose`
+   - **Environment:** Production (y Preview si es necesario)
 
-```javascript
-const response = await fetch('https://tu-dominio.n8n.cloud/webhook/contact-form', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data)
-});
-```
+### Para desarrollo local:
+1. Crea un archivo `.env.local` en la raíz del proyecto
+2. Agrega la línea:
+   ```
+   N8N_WEBHOOK_URL=https://tu-dominio.n8n.cloud/webhook/contact-form-probiose
+   ```
 
 ## Paso 5: Configurar el Flujo de Trabajo
 
