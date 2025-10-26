@@ -1,0 +1,75 @@
+{
+  "name": "Formulario de Contacto Probiose",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contact-form",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "respuesta",
+              "value": "Mensaje recibido correctamente"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "success-response",
+      "name": "Respuesta Éxito",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "emailType": "text",
+        "sendTo": "probiose.cultivosano@outlook.com",
+        "subject": "Nuevo mensaje de contacto - {{ $json.name }}",
+        "body": "Hola,\n\nHas recibido un nuevo mensaje desde el formulario de contacto:\n\nNombre: {{ $json.name }}\nWhatsApp: {{ $json.whatsapp }}\nEmail: {{ $json.email }}\n\nMensaje:\n{{ $json.message }}\n\nFecha: {{ $json.timestamp }}\n\nSaludos,\nSistema Automático"
+      },
+      "id": "email-node",
+      "name": "Enviar Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 1,
+      "position": [680, 300],
+      "credentials": {
+        "smtp": {
+          "id": "tu-credencial-smtp",
+          "name": "SMTP Outlook"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Respuesta Éxito",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Enviar Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null
+}

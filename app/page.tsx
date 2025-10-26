@@ -8,8 +8,8 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "https://assets.probioseec.com/archivos/Desinfeccion01-probiose.jpeg",
-    "https://assets.probioseec.com/archivos/Desinfeccion02-probiose.jpeg"
+    "https://assets.probioseec.com/archivos/desinfeccion01_probiose.jpeg",
+    "https://assets.probioseec.com/archivos/desinfeccion02_probiose.jpeg"
   ];
 
   useEffect(() => {
@@ -33,15 +33,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="shrink-0">
-              <Image
-                src="/assets/logo/Logo-Probiose.png"
-                alt="Probiose Ec Logo"
-                width={168}
-                height={56}
-                className="h-14 w-auto"
-              />
-            </div>
+            <a href="/">
+              <div className="shrink-0">
+                <Image
+                  src="https://assets.probioseec.com/logos/logo_probiose.png"
+                  alt="Probiose Ec Logo"
+                  width={85}
+                  height={56}
+                  className="h-14 w-[85px]"
+                />
+              </div>
+            </a>
             {/* Menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-6">
@@ -93,7 +95,7 @@ export default function Home() {
       <section id="hero" className="relative flex min-h-screen items-center justify-center px-4 overflow-hidden">
         {/* Video Background */}
         <video
-          src="https://assets.probioseec.com/archivos/Bananera%20Background.mp4"
+          src="https://assets.probioseec.com/archivos/bananera_background.mp4"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           autoPlay
           muted
@@ -149,7 +151,7 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-lg shadow-lg overflow-hidden relative w-[280px] h-[400px] group cursor-pointer">
-              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/cumplimientodeley-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/cumplimiento_de_ley_probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.5) 100%)' }}></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.85) 100%)' }}></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
@@ -158,7 +160,7 @@ export default function Home() {
               </div>
             </div>
                         <div className="rounded-lg shadow-lg overflow-hidden relative w-[280px] h-[400px] group cursor-pointer">
-              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/moko-probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+              <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-110 group-active:scale-110" style={{ backgroundImage: 'url(https://assets.probioseec.com/archivos/moko_probiose.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.5) 100%)' }}></div>
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(10, 25, 4, 0.85) 100%)' }}></div>
               <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
@@ -257,27 +259,27 @@ export default function Home() {
             {/* Product Card - styled like image example */}
             {[
               {
-                src: '/assets/productos/bacfung-probiose.jpg',
+                src: 'https://assets.probioseec.com/productos/bacfung_probiose.jpg',
                 title: 'Bacfung',
                 desc: 'Producto agrícola especializado en control de hongos.'
               },
               {
-                src: '/assets/productos/fertilizante_agricola-probiose.jpg',
+                src: 'https://assets.probioseec.com/productos/fertilizante_agricola_probiose.jpg',
                 title: 'Fertilizante Agrícola',
                 desc: 'Fertilizante de alta calidad para mejorar el rendimiento de cultivos.'
               },
               {
-                src: '/assets/productos/peroxido_de_hidrogeno-probiose.jpg',
-                title: 'Peróxido de Hidrógeno',
-                desc: 'Desinfectante y oxidante para aplicaciones agrícolas.'
+                src: 'https://assets.probioseec.com/productos/hidroxido_de_calcio_probiose.jpg',
+                title: 'Hidróxido de Calcio',
+                desc: 'Enmienda agrícola para mejorar la calidad del suelo.'
               },
               {
-                src: '/assets/productos/bioactivador-biologico-probiose.jpg',
+                src: 'https://assets.probioseec.com/productos/bioactivador_biologico_probiose.jpg',
                 title: 'Bioactivador Biológico',
                 desc: 'Activador biológico para estimular el crecimiento vegetal.'
               },
               {
-                src: '/assets/productos/peroxido_hidrogeno-probiose.jpg',
+                src: 'https://assets.probioseec.com/productos/peroxido_hidrogeno_probiose.jpg',
                 title: 'Peróxido de Hidrógeno',
                 desc: 'Solución desinfectante para tratamientos agrícolas.'
               }
@@ -330,13 +332,13 @@ export default function Home() {
         </div>
             {/* Right: form card */}
             <div className="bg-(--green-secundary) rounded-2xl p-8 shadow-xl">
-              <form className="space-y-6" noValidate>
+              <form id="contactForm" className="space-y-6" noValidate>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input name="name" type="text" placeholder="Tu nombre" required className="w-full px-4 py-3 rounded-md bg-(--green-background) border border-transparent text-(--blanco) placeholder-(--green-text) focus:outline-none focus:ring-2 focus:ring-(--yellow-accent)" />
 
                   <div className="flex">
                     <span className="inline-flex items-center px-3 rounded-l-md bg-[#0f2b09] text-(--blanco)">EC</span>
-                    <input name="whatsapp" type="tel" inputMode="numeric" placeholder="Tu numero" required pattern="[0-9]*" maxLength={9} className="w-full px-4 py-3 rounded-r-md bg-(--green-background) border border-transparent text-(--blanco) placeholder-(--green-text) focus:outline-none focus:ring-2 focus:ring-(--yellow-accent)" />
+                    <input name="whatsapp" type="tel" inputMode="numeric" placeholder="Tu numero" required pattern="[0-9]*" maxLength={10} className="w-full px-4 py-3 rounded-r-md bg-(--green-background) border border-transparent text-(--blanco) placeholder-(--green-text) focus:outline-none focus:ring-2 focus:ring-(--yellow-accent)" />
                   </div>
                 </div>
 
@@ -345,11 +347,11 @@ export default function Home() {
                 <textarea name="message" placeholder="Tu solicitud" rows={6} className="w-full px-4 py-4 rounded-md bg-(--green-background) border border-transparent text-(--blanco) placeholder-(--green-text) focus:outline-none focus:ring-2 focus:ring-(--yellow-accent)" />
 
                 <div className="flex justify-center items-center">
-                  <button type="submit" className="group relative flex items-center bg-(--green-primary) text-(--blanco) pl-12 pr-3 py-3 rounded-full font-semibold shadow-md overflow-hidden">
+                  <button type="submit" id="submitBtn" className="group relative flex items-center bg-(--green-primary) text-(--blanco) pl-12 pr-3 py-3 rounded-full font-semibold shadow-md overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed">
                     {/* white overlay expands from center to edges on hover */}
                     <span aria-hidden className="absolute inset-0 bg-white transform-gpu scale-x-0 scale-y-[3.5] origin-center group-hover:scale-x-[3.5] group-hover:scale-y-[3.5] group-active:scale-x-[3.5] group-active:scale-y-[3.5] transition-transform duration-600 ease-in-out z-0 rotate-45" />
 
-                    <span className="relative z-10 leading-none transition-colors duration-600 ease-in-out group-hover:text-(--green-primary) group-active:text-(--green-primary)">¡Envía tu Mensaje!</span>
+                    <span id="submitText" className="relative z-10 leading-none transition-colors duration-600 ease-in-out group-hover:text-(--green-primary) group-active:text-(--green-primary)">¡Envía tu Mensaje!</span>
 
                     <div className="relative z-10 w-9 h-9 bg-(--yellow-accent) rounded-full flex items-center justify-center text-(--green-background) font-bold ml-3 group-hover:bg-(--green-primary) group-hover:text-white group-active:bg-(--green-primary) group-active:text-white transition-colors duration-600 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -374,7 +376,7 @@ export default function Home() {
               {/* Logo */}
               <div>
                 <Image
-                  src="/assets/logo/Logo-Probiose.png"
+                  src="https://assets.probioseec.com/logos/logo_probiose.png"
                   alt="Probiose Ec Logo"
                   width={360}
                   height={120}
@@ -452,7 +454,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-(--green-text) text-sm">Visítanos</div>
-                    <div className="text-(--blanco) font-semibold">Vinces-Ecuador</div>
+                    <div className="text-(--blanco) font-semibold">Pueblo Viejo - Ecuador</div>
                   </div>
                 </li>
               </ul>
@@ -487,6 +489,101 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <ContactFormHandler />
     </div>
   );
+}
+
+// Componente para manejar el formulario de contacto
+function ContactFormHandler() {
+  useEffect(() => {
+    const form = document.getElementById('contactForm') as HTMLFormElement;
+    const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement;
+    const submitText = document.getElementById('submitText') as HTMLSpanElement;
+
+    if (!form || !submitBtn || !submitText) return;
+
+    const handleSubmit = async (e: Event) => {
+      e.preventDefault();
+
+      // Validar formulario
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Deshabilitar botón y mostrar loading
+      submitBtn.disabled = true;
+      submitText.textContent = 'Enviando...';
+
+      try {
+        // Recopilar datos del formulario
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get('name'),
+          whatsapp: formData.get('whatsapp'),
+          email: formData.get('email'),
+          message: formData.get('message'),
+          timestamp: new Date().toISOString(),
+          source: 'website_contact_form'
+        };
+
+        // Enviar a n8n webhook de producción
+        const response = await fetch('https://n8n-n8n.3yia0f.easypanel.host/webhook/contact-form-probiose', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          // Éxito
+          submitText.textContent = '¡Mensaje enviado!';
+          form.reset();
+
+          // Mostrar mensaje de éxito temporal
+          setTimeout(() => {
+            submitText.textContent = '¡Envía tu Mensaje!';
+            submitBtn.disabled = false;
+          }, 3000);
+        } else {
+          // Error específico del servidor
+          const errorText = await response.text().catch(() => 'Error desconocido del servidor');
+          console.error('Error del servidor:', response.status, response.statusText, errorText);
+          throw new Error(`Error del servidor: ${response.status} ${response.statusText}`);
+        }
+
+      } catch (error) {
+        console.error('Error al enviar formulario:', error);
+
+        // Determinar el tipo de error para mostrar mensaje apropiado
+        let errorMessage = 'Error - Inténtalo de nuevo';
+
+        if (error instanceof TypeError && (error as TypeError).message.includes('fetch')) {
+          errorMessage = 'Error de conexión - Verifica tu internet';
+        } else if (error instanceof Error && (error as Error).message.includes('CORS')) {
+          errorMessage = 'Error de configuración - Contacta al administrador';
+        } else if (error instanceof Error && (error as Error).message.includes('Error del servidor')) {
+          errorMessage = 'Error del servidor - Inténtalo más tarde';
+        }
+
+        submitText.textContent = errorMessage;
+        submitBtn.disabled = false;
+
+        // Resetear texto después de 5 segundos para errores
+        setTimeout(() => {
+          submitText.textContent = '¡Envía tu Mensaje!';
+        }, 5000);
+      }
+    };
+
+    form.addEventListener('submit', handleSubmit);
+
+    return () => {
+      form.removeEventListener('submit', handleSubmit);
+    };
+  }, []);
+
+  return null;
 }

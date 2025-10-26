@@ -12,15 +12,17 @@ export default function PoliticaPrivacidad() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="shrink-0">
-              <Image
-                src="/assets/logo/Logo-Probiose.png"
-                alt="Probiose Ec Logo"
-                width={168}
-                height={56}
-                className="h-14 w-auto"
-              />
-            </div>
+            <a href="/">
+              <div className="shrink-0">
+                <Image
+                  src="https://assets.probioseec.com/logos/logo_probiose.png"
+                  alt="Probiose Ec Logo"
+                  width={85}
+                  height={56}
+                  className="h-14 w-[85px]"
+                />
+              </div>
+            </a>
             {/* Menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-6">
@@ -188,7 +190,7 @@ export default function PoliticaPrivacidad() {
               {/* Logo */}
               <div>
                 <Image
-                  src="/assets/logo/Logo-Probiose.png"
+                  src="https://assets.probioseec.com/logos/logo_probiose.png"
                   alt="Probiose Ec Logo"
                   width={360}
                   height={120}
@@ -266,7 +268,7 @@ export default function PoliticaPrivacidad() {
                   </div>
                   <div>
                     <div className="text-(--green-text) text-sm">Visítanos</div>
-                    <div className="text-(--blanco) font-semibold">Vinces-Ecuador</div>
+                    <div className="text-(--blanco) font-semibold">Pueblo Viejo - Ecuador</div>
                   </div>
                 </li>
               </ul>

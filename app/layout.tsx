@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Probiose Ec",
     images: [
       {
-        url: "https://assets.probioseec.com/archivos/Logo-Probiose.png",
+        url: "https://assets.probioseec.com/logos/logo_probiose.png",
         width: 1200,
         height: 630,
         alt: "Probiose Ec Logo",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Probiose Ec - Soluciones Agrícolas",
     description: "Expertos en tratamientos fitosanitarios y fertilizantes biológicos.",
-    images: ["https://assets.probioseec.com/archivos/Logo-Probiose.png"],
+    images: ["https://assets.probioseec.com/logos/logo_probiose.png"],
   },
   robots: {
     index: true,
@@ -68,7 +68,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Probiose Ec",
               "url": "https://probioseec.com",
-              "logo": "https://assets.probioseec.com/archivos/Logo-Probiose.png",
+              "logo": "https://assets.probioseec.com/logos/logo_probiose.png",
               "description": "Empresa especializada en soluciones agrícolas sostenibles, control de plagas y tratamientos fitosanitarios.",
               "address": {
                 "@type": "PostalAddress",
